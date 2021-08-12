@@ -2,11 +2,13 @@
 let arrNum = ["0","1","2","3"];
 var clickedCard = [];
 var completedCard = [];
-// function getInputVal(){
-//     var clicked = document.getElementById('inputId1').name;
-//     clickedCard.push(clicked);
-//     console.log(clickedCard);
-// }
+
+var input =[];
+function getInputVal(){
+    var clicked = document.getElementById('inputId1').name;
+    clickedCard.push(clicked);
+    console.log(clickedCard);
+}
 
 
 function getInputVal1(){
@@ -46,4 +48,5 @@ function checkNum(){
         console.log(clickedCard);
     }
 }
+
 

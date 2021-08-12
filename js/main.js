@@ -3,6 +3,7 @@ const card = document.querySelector(".card__inner1");
 const box = document.querySelector(".box2");
 let arrNum = [0,1,2,3,4];
 var completedCard = [];
+var currNum = 0;
 
 
 var clicked = document.getElementByName('name');
@@ -86,6 +87,8 @@ function card4(){
   });
 }
 
+
+
 function card5(){
   var clicked6 = document.querySelector('.card__inner5').getAttribute('name');
 
@@ -104,3 +107,13 @@ function card5(){
 
 
 //display:none 이 되어야 box1 box2 ---들이 사라지면서 클릭할수있게됨.
+
+
+function card_show(){
+  num = currNum;
+  if(num>=arrNum) return;
+  for(i=0; i<arrNum.length; i++){
+    tem1 = $('<input type="radio" name="choice" id="choice' + (i+1)+'">');
+    tem2 = $('<label for="choice' + (i + 1) + '">').text(arrNum[i]);
+  }
+}
