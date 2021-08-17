@@ -4,19 +4,33 @@ var clickedCard = [];
 var completedCard = [];
 
 var input =[];
-function getInputVal(){
+
+for(var i = 0; i<arrNum.length; i++){
     var clicked = document.getElementById('inputId1').name;
     clickedCard.push(clicked);
-    console.log(clickedCard);
-}
+    if(clickedCard[0] == arrNum[0]){
+        alert('맞습니다.');
+        console.log(clickedCard);
+    }else if(clickedCard[1] == arrNum[1]){
+        var clicked = document.getElementById('inputId1').value;
+        clickedCard.push(clicked);
+        alert('맞습니다2.');
+        console.log(clickedCard);
+    }
+// function getInputVal(){
+//     var clicked = document.getElementById('inputId1').name;
+//     clickedCard.push(clicked);
+   
+//     console.log(clickedCard);
+// }
 
 
-function getInputVal1(){
-    var clicked = document.getElementById('inputId1').value;
-    clickedCard.push(clicked);
-    console.log(clickedCard);
-    checkNum();
-}
+// function getInputVal1(){
+//     var clicked = document.getElementById('inputId1').value;
+//     clickedCard.push(clicked);
+//     console.log(clickedCard);
+//     checkNum();
+// }
 function getInputVal2(){
     var clicked2 = document.getElementById('inputId2').value;
     clickedCard.push(clicked2);
@@ -41,12 +55,11 @@ function checkNum(){
             alert('잘 맞췄습니다. 다음은?');
         }else{
             clickedCard.push();
-            console.log(clickedCard);
+            // console.log(clickedCard);
         }
     }else{
         clickedCard.pop();
-        console.log(clickedCard);
+        // console.log(clickedCard);
     }
-}
-
+}}
 
